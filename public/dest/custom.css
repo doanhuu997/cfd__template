@@ -69,3 +69,11 @@ position: initial;
 {
     height: 100vh;
 }
+.homepage .section-testimonial .testimonial .testimonial-item .btn_ctr
+{
+    background-color: #333 !important;
+}
+#header .wrap .logo,#header .wrap .logo img
+{
+    height: 100%;
+}

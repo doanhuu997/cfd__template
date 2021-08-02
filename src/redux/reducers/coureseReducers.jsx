@@ -5,9 +5,17 @@ import createSlice from "../../core/createSlice"
 const initalState = {
     Detail: [],
     Related:[],
-    list:[]
+    courses:[]
 
 }
+export function Coures() {
+    return (dispatch) => {
+        courseApi.courses()
+            .then(res => {
+                dispatch({ type: TYPE.course, payload: res })
+            })
+    }
+} 
 export function Detail(slug) {
     return (dispatch) => {
         courseApi.detail(slug)
@@ -24,11 +32,16 @@ export function Related(slug) {
             })
     }
 } 
-export function Register(slug) {
+export function Register(slug,data) {
     return (dispatch) => {
-        courseApi.detail(slug)
+        courseApi.register(slug,data)
             .then(res => {
-                dispatch({ type: TYPE.course, payload: res.data })
+                if (res.error) {
+                    dispatch({ type: TYPE.error, payload: res.error })
+                }
+                else {
+                    dispatch({ type: TYPE.login, payload: res.data })
+                }
             })
     }
 } 
@@ -39,6 +52,7 @@ export function Register(slug) {
         course: function (state, action) {
             return {
                 ...state,
+                courses:action.payload,
                 Detail: action.payload.data,
                 Related: action.payload.data,
 

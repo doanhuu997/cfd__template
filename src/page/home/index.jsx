@@ -12,32 +12,44 @@ import CourseList from '../../components/courseList'
 import UseStateSecssion from '../../core/useStateSecsion'
 export default function Home() {
     let dispatch = useDispatch()
-
-    // let [state, setState] = UseStateSecssion({
-    //     gallery: [],
-    //     online: [],
-    //     offline: [],
-    //     review: [],
-    //     api: true,
-    //     loading: true
-    // }, 'home')
+    const homes = useSelector(state => state.home)
+    let [state, setState] = UseStateSecssion({
+        gallery: [],
+        online: [],
+        offline: [],
+        review: [],
+        api: true,
+        loading: true
+    }, 'home')
 
     useEffect(() => {
         dispatch(getHome())
-    }, [])
-    const homes = useSelector(state => state.home)
+        const pageHome=homes.home
+            console.log(pageHome)
+        if(state.api)
+        {
+           
+         
+            setState({
+                ...state,
+              pageHome,
+              loading:false,
+              api:false
+            })
+        }
+    },[])
     if( !homes.home){
         return 'Loading..........'
     }
-    
+ 
     return (
         <main className="homepage" id="main">
             <Banner />
 
-            <CourseList offline={homes?.home?.offline} online={homes?.home?.online} />
+            <CourseList offline={homes.home.offline} online={homes.home.online} />
             <Different />
-            <Testimonial review={homes?.home?.review} />
-            <Gallery gallery={homes?.home?.gallery} />
+            <Testimonial review={homes.home.review} />
+            <Gallery gallery={homes.home.gallery} />
             <Action />
 
         </main>

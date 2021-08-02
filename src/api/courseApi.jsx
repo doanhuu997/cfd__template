@@ -10,6 +10,9 @@ export default {
             body: JSON.stringify(data)
         }).then(res => res.json())
     },
+    courses() {
+        return fetch(`http://cfd-reactjs.herokuapp.com/elearning/v4/course`).then(res => res.json())
+    },
     detail(slug) {
         return fetch(`http://cfd-reactjs.herokuapp.com/elearning/v4/course/${slug}`).then(res => res.json())
     },

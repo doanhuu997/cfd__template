@@ -48,7 +48,9 @@ export default function Testimonial({review}) {
             $carousel.flickity('next', true);
         });
     })
-
+    if(!review){
+        return '.....Loadding'
+    }
     return (
         <section className="section-testimonial">
         <div className="container">
@@ -59,7 +61,7 @@ export default function Testimonial({review}) {
                 <div className="testimonial-item">
                     <div className="item">
                         <div className="text">
-                            {/* {
+                            {
                                 review.map((e, i) => (
                                     <div className={`ct ct-${i + 1 }`} key={i}>
                                         <div className="info">
@@ -78,12 +80,12 @@ export default function Testimonial({review}) {
                                         </div>
                                     </div>
                                 ))
-                            } */}
+                            }
 
                         </div>
                         <div className="images">
                             <div className="list" listRef>
-                                {/* {
+                                {
                                     review.map((e, i) => (
                                         <div className="carousel-cell"  key={i}>
 
@@ -113,7 +115,7 @@ export default function Testimonial({review}) {
                                             </div>
                                         </div>
                                     ))
-                                } */}
+                                }
 
 
                             </div>

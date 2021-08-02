@@ -1,9 +1,9 @@
 
 import homeapi from "../../api/homeapi"
 import createSlice from "../../core/createSlice"
-const pagehome = JSON.parse(localStorage.getItem('pageHome'))
+
 const initalState = {
-   home:pagehome?.home || []
+   home:[]
 
 }
 export function getHome() {
@@ -18,9 +18,12 @@ export function getHome() {
     initalState,
     reducers: {
         home: function (state, action) {
+       
+           
             return {
                 ...state,
-               home:action.payload
+              home:action.payload
+            
             }
         }
 

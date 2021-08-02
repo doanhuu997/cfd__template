@@ -2,7 +2,15 @@ import React from 'react';
 import Course from './course'
 import {  useSelector } from 'react-redux'
 export default function CourseList({online,offline}) {
-    console.log(online)
+if( !online)
+{
+    return '....Loading'
+}
+if(!offline)
+{
+    return '....Loading'
+}
+
     return (
         <>
             <section className="section-courseonline section-blue">
@@ -11,9 +19,9 @@ export default function CourseList({online,offline}) {
                         <h2 className="main-title">Khóa học Online</h2>
                     </div>
                     <div className="list row">
-                    {/* {
+                    {
                         offline.map(e =>   <Course key={e._id} {...e} />)
-                    } */}
+                    }
                       
                        
                     </div>
@@ -31,9 +39,9 @@ export default function CourseList({online,offline}) {
                         <h2 className="main-title">Khóa học Offline</h2>
                     </div>
                     <div className="list row">
-                    {/* {
+                    {
                         online.map(e =>   <Course key={e._id} {...e} />)
-                    } */}
+                    }
                     </div>
                 </div>
             </section>

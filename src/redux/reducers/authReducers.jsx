@@ -22,7 +22,20 @@ export function login(data) {
     }
 
 }
+export function updateInfor(data) {
+    return (dispatch) => {
+        userApi.login(data)
+            .then(res => {
+                if (res.error) {
+                    dispatch({ type: TYPE.error, payload: res.error })
+                }
+                else {
+                    dispatch({ type: TYPE.login, payload: res.data })
+                }
+            })
+    }
 
+}
  let { action, reducer, TYPE } = createSlice({
     name: 'auth',
     initalState,

@@ -30,8 +30,8 @@ export default function Header() {
                         </div>
                         <span className="text">menu</span>
                     </div>
-                    <NavLink  exact to="/" className="logo">
-                        <img src="img/logo.svg" alt="" />
+                    <NavLink  exact to="/" className="logo" >
+                        <img src="%PUBLIC_URL%/public/dest/img/logo.svg" alt="" />
                         <h1>CFD</h1>
                     </NavLink>
                     <div className="right">

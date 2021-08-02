@@ -15,7 +15,7 @@ const routers = [
                 exact: true
             },
             {
-                path: '/',
+                path: '/team',
                 component: Team,
                 
             },

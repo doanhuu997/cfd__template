@@ -26,14 +26,14 @@ const routers = [
             {
                 path: '/course/:slug',
                 component: Course_detail,
+            },    {
+
+                component: Page404,
             },
 
         ]
     },
 
-    {
 
-        component: Page404,
-    },
 ]
 export default routers;

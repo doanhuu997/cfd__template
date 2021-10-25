@@ -1,24 +1,30 @@
 {
   "files": {
     "main.css": "/cfd__template/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/cfd__template/static/js/main.9c45e5d4.chunk.js",
-    "main.js.map": "/cfd__template/static/js/main.9c45e5d4.chunk.js.map",
+    "main.js": "/cfd__template/static/js/main.a4ba9f34.chunk.js",
+    "main.js.map": "/cfd__template/static/js/main.a4ba9f34.chunk.js.map",
     "runtime-main.js": "/cfd__template/static/js/runtime-main.9f1f3404.js",
     "runtime-main.js.map": "/cfd__template/static/js/runtime-main.9f1f3404.js.map",
-    "static/js/2.2f92562e.chunk.js": "/cfd__template/static/js/2.2f92562e.chunk.js",
-    "static/js/2.2f92562e.chunk.js.map": "/cfd__template/static/js/2.2f92562e.chunk.js.map",
+    "static/js/2.0e9682d8.chunk.js": "/cfd__template/static/js/2.0e9682d8.chunk.js",
+    "static/js/2.0e9682d8.chunk.js.map": "/cfd__template/static/js/2.0e9682d8.chunk.js.map",
     "static/js/3.afa64869.chunk.js": "/cfd__template/static/js/3.afa64869.chunk.js",
     "static/js/3.afa64869.chunk.js.map": "/cfd__template/static/js/3.afa64869.chunk.js.map",
     "index.html": "/cfd__template/index.html",
     "static/css/main.8c8b27cf.chunk.css.map": "/cfd__template/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.2f92562e.chunk.js.LICENSE.txt": "/cfd__template/static/js/2.2f92562e.chunk.js.LICENSE.txt",
+    "static/js/2.0e9682d8.chunk.js.LICENSE.txt": "/cfd__template/static/js/2.0e9682d8.chunk.js.LICENSE.txt",
+    "static/media/anhvuong.b552f063.jpg": "/cfd__template/static/media/anhvuong.b552f063.jpg",
+    "static/media/anhvuong2.fea3759c.jpg": "/cfd__template/static/media/anhvuong2.fea3759c.jpg",
+    "static/media/avatar-lg.2cb0600f.png": "/cfd__template/static/media/avatar-lg.2cb0600f.png",
+    "static/media/bg-cover.110dadf6.jpg": "/cfd__template/static/media/bg-cover.110dadf6.jpg",
+    "static/media/danghuy.eb9b2f87.jpg": "/cfd__template/static/media/danghuy.eb9b2f87.jpg",
     "static/media/logo.3106be24.svg": "/cfd__template/static/media/logo.3106be24.svg",
-    "static/media/logo.6ce24c58.svg": "/cfd__template/static/media/logo.6ce24c58.svg"
+    "static/media/logo.6ce24c58.svg": "/cfd__template/static/media/logo.6ce24c58.svg",
+    "static/media/trannghia.8ea8a983.jpg": "/cfd__template/static/media/trannghia.8ea8a983.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.9f1f3404.js",
-    "static/js/2.2f92562e.chunk.js",
+    "static/js/2.0e9682d8.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.9c45e5d4.chunk.js"
+    "static/js/main.a4ba9f34.chunk.js"
   ]
 }

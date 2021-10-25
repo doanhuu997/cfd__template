@@ -49,7 +49,7 @@ import { useSelector } from 'react-redux';
             let res= await  userApi.updateInfo(form);
             if(res.data)
             {
-                // updateInfo(res.data)
+                 updateInfo(res.data)
             }
         }
     }

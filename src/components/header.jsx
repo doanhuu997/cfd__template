@@ -44,7 +44,7 @@ export default function Header() {
                                     <a href="#" className="info">
                                         <div className="name">{user.name}</div>
                                         <div className="avatar">
-                                            <img src="img/avt.png" alt="" />
+                                            <img src={avatar} alt="" />
                                         </div>
                                     </a>
                                 </div>

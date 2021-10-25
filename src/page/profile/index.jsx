@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { useRouteMatch } from 'react-router'
 import { NavLink } from 'react-router-dom'
+import avt from '../../assets/img/avatar-lg.png'
 export default function Profile({ children }) {
     let { url } = useRouteMatch()
     let { user } = useSelector(state => state.auth);
@@ -13,7 +14,7 @@ export default function Profile({ children }) {
                 <div className="top-info">
                     <div className="avatar">
                         {/* <span class="text">H</span> */}
-                        <img src="../img/avatar-lg.png" alt="" />
+                        <img src={avt} alt="" />
                         <div className="camera" />
                     </div>
                     <div className="name">{user.name}</div>

@@ -8,6 +8,11 @@ import Register from "./page/register";
 import Profile from "./page/profile";
 import MyInfor from "./page/profile/components/myInfo";
 import Coins from "./page/profile/components/coins";
+import Project from "./page/project";
+import HistoryPayment from "./page/profile/components/historyPayment";
+import MyCourse from "./page/profile/components/myCourse";
+import MyProject from "./page/profile/components/myProject";
+import Contact from "./page/contact";
 const routers = [
     {
         path: '/',
@@ -40,12 +45,38 @@ const routers = [
 
                     },
                     {
+                        path: '/historyPayment',
+                        component: HistoryPayment,
+
+                    },
+                    {
+                        path: '/myCourse',
+                        component: MyCourse,
+
+                    },
+                    {
+                        path: '/myProject',
+                        component: MyProject,
+
+                    },
+
+                    {
                         path: '/',
                         component: MyInfor,
                         exact: true
                     }
 
                 ]
+            },
+            {
+                path: '/cfd__template/project',
+                component: Project,
+
+            },
+            {
+                path: '/cfd__template/contact',
+                component: Contact,
+
             },
             {
                 path: '/cfd__template/',
